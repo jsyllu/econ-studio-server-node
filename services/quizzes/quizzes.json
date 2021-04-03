@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "123",
+    "courseId": "ABC123",
+    "title": "Quiz 1"
+  },
+  {
+    "_id": "234",
+    "courseId": "ABC234",
+    "title": "Quiz 2"
+  },
+  {
+    "_id": "345",
+    "courseId": "ABC345",
+    "title": "Quiz 3"
+  }
+]
