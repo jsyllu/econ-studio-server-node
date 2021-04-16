@@ -1,20 +1,16 @@
-const quizzes = require('./quizzes.json')
+const quizzesDao = require('../../daos/quizzes-dao')
 
 const createQuizForCourse = (cid) => {
 
 }
 const findAllQuizzes = () => {
-    return quizzes
+    return quizzesDao.findAllQuizzes()
 }
 const findQuizById = (qid) => {
-    return quizzes.find((q) => {
-        return (q._id === qid)
-    })
+    return quizzesDao.findQuizById(qid)
 }
 const findQuizzesForCourse = (cid) => {
-    return quizzes.filter((q) => {
-        return (q.courseId === cid)
-    })
+    return quizzesDao.findQuizzesForCourse(cid)
 }
 const updateQuiz = (qid) => {
 
