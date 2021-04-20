@@ -42,5 +42,8 @@ require('./controllers/quiz-controller')(app)
 require('./controllers/question-controller')(app)
 require('./controllers/quiz-attempt-controller')(app)
 
+app.get("/", (req, res) => {
+    res.send("Hello, Econ-Studio")
+})
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Econ-Studio app listening on port ${port}!`))
